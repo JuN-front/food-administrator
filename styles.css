@@ -77,6 +77,7 @@ input[type="text"], input[type="date"]{
   border-radius: 12px;
   font-size: 16px;
   outline: none;
+  width:100%;
 }
 
 input[type="text"]:focus, input[type="date"]:focus{ border-color: #9ca3af; background: #fff; }
@@ -190,7 +191,7 @@ input[type="text"]:focus, input[type="date"]:focus{ border-color: #9ca3af; backg
 
 .edit-wrap input[type="text"], .edit-wrap input[type="date"]{ background:#fff; }
 
-@media (max-width: 640px){
+@media (max-width: 768px){
   .add-card{ 
     grid-template-columns: 1fr; 
    }
