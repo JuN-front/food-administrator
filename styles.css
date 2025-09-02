@@ -8,8 +8,8 @@
   --ring:#e5e7eb;        /* borders */
   --soft:#f3f4f6;        /* inputs */
   --warn-bg:#ffe6cc;     /* within 2 days */
-  --warn-border:#f59e0b;
-  --danger-bg:#ffd6d6;   /* expired */
+  --warn-border:#ffcc00;
+  --danger-bg:#ff00ff;   /* expired */
   --danger-border:#ef4444;
   --radius:14px;
 }
@@ -36,6 +36,13 @@ h1{
   letter-spacing: 0.04em;
   margin: 8px 0 20px;
   font-size: clamp(28px, 5vw, 44px);
+}
+
+h2{
+  text-align: center;
+  letter-spacing: 0.04em;
+  margin: 8px 0 20px;
+  font-size: clamp(20px, 5vw, 32px);
 }
 
 /* Input row */
@@ -76,7 +83,7 @@ input[type="text"]:focus, input[type="date"]:focus{ border-color: #9ca3af; backg
 
 .btn{
   cursor: pointer;
-  background: var(--accent);
+  background: #6633FF;
   color: var(--accent-ink);
   border: 0;
   border-radius: 12px;
