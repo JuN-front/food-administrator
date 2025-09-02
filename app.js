@@ -137,4 +137,16 @@
   load();
   render();
   validateInputs();
+
+  // iOS Safari repaint workaround for date input initial short height
+  window.addEventListener('load', () => {
+  const exp = document.getElementById('exp');
+  if (!exp) return;
+  // Toggle display to force a layout pass
+  exp.style.display = 'none';
+  // Force reflow
+  void exp.offsetHeight;
+  exp.style.display = '';
+});
+
 })();
