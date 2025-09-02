@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SYOKUKAN</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>食材管理サイト SYOKUKAN</h1>
+
+    <section class="add-card" aria-label="Add Ingredient">
+      <div class="control">
+        <label for="name">食材名</label>
+        <input id="name" type="text" placeholder="豚肉" autocomplete="off" />
+      </div>
+      <div class="control">
+        <label for="exp">消費/賞味期限</label>
+        <input id="exp" type="date" />
+      </div>
+      <button id="addBtn" class="btn" aria-label="Add ingredient">追加</button>
+    </section>
+
+    <div class="list" id="list" aria-live="polite"></div>
+    <p class="empty" id="emptyMsg" hidden>まだ食材がありません。追加してください</p>
+  </div>
+
+  <template id="itemTemplate">
+    <div class="item" data-id="">
+      <div class="name"></div>
+      <div class="date"></div>
+      <div class="actions">
+        <button class="icon-btn edit" title="Edit" aria-label="Edit">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zm17.71-10.04a1.003 1.003 0 0 0 0-1.42l-2.5-2.5a1.003 1.003 0 0 0-1.42 0l-1.83 1.83 3.75 3.75 1.99-1.66z"/></svg>
+        </button>
+        <button class="icon-btn delete" title="Delete" aria-label="Delete">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 7h12l-1 14H7L6 7zm3-3h6l1 2H8l1-2z"/></svg>
+        </button>
+      </div>
+    </div>
+  </template>
+
+  <script src="app.js"></script>
+</body>
+</html>
