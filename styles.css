@@ -1,7 +1,7 @@
 :root{
-  --bg:#f8f8f9;          /* app background */
+  --ink:#f8f8f9;          /* app text */
   --card:#ffffff;        /* panels */
-  --ink:#1f2937;         /* text */
+  --bg:#1f2937;         /* background */
   --muted:#6b7280;       /* subdued text */
   --accent:#111827;      /* buttons */
   --accent-ink:#ffffff;  /* button text */
